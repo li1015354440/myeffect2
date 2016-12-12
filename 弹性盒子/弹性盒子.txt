@@ -1,0 +1,60 @@
+弹性盒子 flexbox布局（更加有效实现的方法实现响应式布局）
+
+分三个版本：
+	旧版本（兼容主流浏览器的老版本，但是不支持IE）、 
+	新版本（从IE11开始支持，主流浏览器的新版本支持，部分老版本就不支持）、 
+	混合过渡版本（主要兼容IE10）
+
+
+旧版本：
+将div设置成box
+    display: box;   块级弹性伸缩布局
+	
+	box  块级弹性伸缩布局
+	inline-box   内联级弹性伸缩布局
+
+
+1、
+box-orient	盒子内部元素的流动方向
+
+2、
+box-direction	盒子内部元素的流动的顺序
+
+3、
+box-pack	盒子内部元素的分布方式
+
+4、
+box-flex	使用浮点数分配伸缩项目比例
+
+
+混合 主要兼容IE10：
+将div设置成box
+    display: flexbox;   块级弹性伸缩布局
+	
+	box  块级弹性伸缩布局
+	inline-box   内联级弹性伸缩布局
+
+1.flex-direction	盒子内部元素的流动方向
+	和旧版本的box-orient属性一样
+
+2.
+flex-wrap     无法容纳时候，自动换行
+
+3.
+-ms-flex-flow: row wrap;     前边两种的简写方式	
+
+4.
+flex-pack	盒子内部元素的分布方式
+
+5.
+flex     与box-flex相似	使用浮点数分配伸缩项目比例
+
+
+新版本   主要兼容IE11和以及未来版本和主流浏览器
+	语法有变化，功能大部分一样
+
+1.
+flex-direction    排列方式
+
+2.
+flex-flow:row warp    集合了排列方式和自动换行

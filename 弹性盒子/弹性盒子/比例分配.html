@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>弹性盒子</title>
+		<style>
+			*{
+				padding:0 ; margin:0 ;
+			}
+			
+			div{
+				width:100%;
+				background: burlywood;
+				display: -webkit-box;            /*块级弹性伸缩布局*/
+				display: -moz-box;			/*火狐*/
+				display: box;				/*标准化写法*/
+			}
+			p{
+				height: 100px;
+			}
+			p:nth-child(1){
+				-webkit-box-flex: 1;
+				background: red;
+			}
+			p:nth-child(2){
+				-webkit-box-flex: 2;
+				background: yellow;
+			}
+			p:nth-child(3){
+				-webkit-box-flex: 3;
+				background: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p></p>
+			<p></p>	
+			<p></p>	
+		</div>
+	</body>
+</html>
